@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ComponenteMatriz from './Matriz'; // Importar el componente Matriz
+import Matriz from './Matriz'; // Importar el componente Matriz
 import Operacion from './Operacion'; // Importar el componente Operacion
 
 const MatrizApp: React.FC = () => {
@@ -21,8 +21,8 @@ const MatrizApp: React.FC = () => {
       <h1>Calculadora de Matrices</h1>
 
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <ComponenteMatriz titulo="Matriz A" matriz={matrizA} onMatrizChange={setMatrizA} />
-        <ComponenteMatriz titulo="Matriz B" matriz={matrizB} onMatrizChange={setMatrizB} />
+        <Matriz titulo="Matriz A" matriz={matrizA} onMatrizChange={setMatrizA} />
+        <Matriz titulo="Matriz B" matriz={matrizB} onMatrizChange={setMatrizB} />
       </div>
 
       <Operacion matrizA={matrizA} matrizB={matrizB} cambiarResultado={setResultado} />
