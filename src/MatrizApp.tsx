@@ -20,7 +20,7 @@ const MatrizApp: React.FC = () => {
     <>
       <h1>Calculadora de Matrices</h1>
 
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div className='matrices'>
         <Matriz titulo="Matriz A" matriz={matrizA} onMatrizChange={setMatrizA} />
         <Matriz titulo="Matriz B" matriz={matrizB} onMatrizChange={setMatrizB} />
       </div>

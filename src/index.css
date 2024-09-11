@@ -51,3 +51,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.matrices {
+  display: flex;
+  justify-content: space-between;
+}
