@@ -16,7 +16,7 @@ const MatrizApp: React.FC = () => {
   const [resultado, setResultado] = useState<number[][] | null>(null);
 
   // Mostrar las matrices y el resultado
-  const renderMatriz = () => (
+  return (
     <>
       <h1>Calculadora de Matrices</h1>
 
@@ -47,8 +47,6 @@ const MatrizApp: React.FC = () => {
       )}
     </>
   );
-
-  return renderMatriz();
 };
 
 export default MatrizApp;
